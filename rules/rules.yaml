@@ -1,0 +1,53 @@
+tech:
+  buy_rules:
+    - name: "RSI Oversold"
+      condition: "RSI < 35"
+    - name: "Golden Cross"
+      condition: "MA_50 > MA_200"
+    - name: "MACD Bullish"
+      condition: "MACD > Signal"
+    - name: "Volatility Stable"
+      condition: "Volatility < 0.025"
+  sell_rules:
+    - name: "RSI Overbought"
+      condition: "RSI > 70"
+    - name: "MACD Bearish"
+      condition: "MACD < Signal"
+    - name: "OBV Declining"
+      condition: "OBV_trend == 'down'"
+
+energy:
+  buy_rules:
+    - name: "RSI Moderate"
+      condition: "RSI < 45"
+    - name: "MACD Bullish"
+      condition: "MACD > Signal"
+    - name: "OBV Rising"
+      condition: "OBV_trend == 'up'"
+    - name: "Volatility Acceptable"
+      condition: "Volatility < 0.04"
+  sell_rules:
+    - name: "RSI High"
+      condition: "RSI > 65"
+    - name: "MACD Bearish"
+      condition: "MACD < Signal"
+    - name: "Volatility Spike"
+      condition: "Volatility > 0.05"
+
+consumer_staples:
+  buy_rules:
+    - name: "RSI Undervalued"
+      condition: "RSI < 40"
+    - name: "MACD Bullish"
+      condition: "MACD > Signal"
+    - name: "Stable OBV"
+      condition: "OBV_trend == 'up'"
+    - name: "Low Volatility"
+      condition: "Volatility < 0.02"
+  sell_rules:
+    - name: "RSI Overbought"
+      condition: "RSI > 75"
+    - name: "MACD Bearish"
+      condition: "MACD < Signal"
+    - name: "OBV Declining"
+      condition: "OBV_trend == 'down'"

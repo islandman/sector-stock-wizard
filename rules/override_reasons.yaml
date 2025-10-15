@@ -1,0 +1,6 @@
+override_reasons:
+  - "I have insider knowledge or news not reflected in the chart."
+  - "I believe the market is mispricing this stock."
+  - "This is a long-term conviction despite short-term signals."
+  - "I’m using a different strategy (e.g., dividend capture, sector rotation)."
+  - "I want to test the system with a contrarian move."
